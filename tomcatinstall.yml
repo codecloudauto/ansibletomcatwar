@@ -2,6 +2,7 @@
 - name: Download Tomcat8 from tomcat.apache.org
   hosts: prod
   remote_user: ec2-user	
+  remote_src: yes
   become: yes
   connection: ssh
   vars:
