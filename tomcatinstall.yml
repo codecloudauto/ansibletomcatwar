@@ -1,7 +1,8 @@
 ---
 - name: Download Tomcat8 from tomcat.apache.org
   hosts: prod
-  vars:
+  remote_user: ec2-user 
+ vars:
     download_url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.83/bin/apache-tomcat-8.5.83.tar.gz
   tasks:
    - name: Download Open JDK
